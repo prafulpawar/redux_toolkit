@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { add } from '../store/reducers/productSlice';
+import { add } from '../Action/productAction';
 import { deleteProduct } from '../store/reducers/productSlice';
 function Two() {
 
