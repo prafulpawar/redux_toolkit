@@ -1,7 +1,6 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { add } from '../Action/productAction';
-import { deleteProduct } from '../store/reducers/productSlice';
+import { add, asyncmove } from '../Action/productAction';
 function Two() {
 
   function handleClick() {
@@ -13,9 +12,10 @@ function Two() {
     dispatch(add(newProduct));
   }
 
-    function deleteItem(){
-     dispatch(deleteProduct());
+    function RemoveHandler(){
+     dispatch(asyncmove());
    }
+
 
 
   const dispatch = useDispatch();
@@ -49,7 +49,7 @@ function Two() {
           </button>
         </div>
 
-        <div onClick={deleteItem} className='flex border-2 border-blue-400 bg-blue-500 pr-8 pl-8 rounded-xl  '>
+        <div onClick={RemoveHandler} className='flex border-2 border-blue-400 bg-blue-500 pr-8 pl-8 rounded-xl  '>
           <button>
             Delete Products
           </button>
