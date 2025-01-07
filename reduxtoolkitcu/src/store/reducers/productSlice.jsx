@@ -12,7 +12,7 @@ const productSlice = createSlice({
   initialState,
     reducers:{
         getData:(state,action)=>{
-            state.products.push(action) 
+          state.products = action.payload;
         },
         add:(state,action)=>{
           state.products.push(action.payload)
