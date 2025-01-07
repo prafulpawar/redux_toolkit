@@ -1,5 +1,6 @@
 import React from 'react'
-import 
+
+import { Provider } from 'react-redux'
 function App() {
   return (
     <div>App</div>
