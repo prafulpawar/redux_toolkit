@@ -1,10 +1,8 @@
 import React from 'react'
-
+import Home from './componetns/Home'
 function App() {
   return (
-     <Provider store={store}>
-        <App/>
-     </Provider>
+      <Home/>
   )
 }
 

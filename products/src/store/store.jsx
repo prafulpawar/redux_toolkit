@@ -1,4 +1,9 @@
-import {configureStore} from '@reduxjs/toolkit'
+// store.js
+import { configureStore } from '@reduxjs/toolkit';
+import productReducer from './reducers/productReducer';
+
 export default configureStore({
-    reducer:{}
-})
+  reducer: {
+    product: productReducer, // Add productReducer to the store
+  },
+});
